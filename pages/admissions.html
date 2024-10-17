@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Get information about achievers on going addmission process for 2024/2025 admissions, check out programmes offered at Achievers University">
+    <Meta name="keywords" content="achievers university, achievers university owo, admissions, application, screening, post utme">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="achieverslogo.png" type="image/x-icon">
+    <title>AUO-CEC International</title>
+    <!-- <link rel="stylesheet" href="./styles/index.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+        }
+
+        .first_section {
+            background-image: url("/assets/10004.jpg"), url("assets/10004.jpg");
+            background-repeat: no-repeat, repeat;
+            background-color: #cccccc;
+            background-size: cover;
+            background-position: center;
+            height: 600px;
+        }
+
+        .second_section {
+            
+            background: #077105;
+        }
+
+        #menubar {
+
+        }
+
+       
+
+        #xRegular {
+            display: none;
+        }
+
+        #menuBar.active {
+            display: none;
+        }
+
+        #navBar.active {
+            display: flex;
+        }
+
+        #xRegular.active {
+            display: flex;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <header class="relative flex justify-between item-center bg-gradient-to-r px-[20px] lg:px-[70px] py-6 from-[#077105] via-[#077105] to-[#049d04]">
+        <a href="./index.html" class="flex -gap-1 items-center -ml-2 lg:-ml-5">
+            <img src="./assets/achieverslogo.png" class="w-[40px] lg:w-20 " alt="">
+            <div class="text-[#fff]">
+                <h1 class="text-xl lg:text-3xl text-red font-bold ">ACHIEVERS UNIVERSITY</h1>
+                <h5 class="text-sm lg:text-md">KM 1, Idasen- Ute Road, Owo, Ondo State</h5>
+            </div>
+        </a>
+
+        
+        <ul id="navBar" class="absolute hidden left-0 top-[95px] lg:top-[0px]  bg-white lg:bg-transparent p-0 w-[100%] lg:w-fit lg:relative decoration-none text-[#077105] lg:text-[#fff] lg:flex flex-col lg:flex-row items-center lg:gap-12 text-[11px]">
+            <li class="hover:tracking-wider w-[100%] lg:w-fit py-3 pl-4 lg:pl-0 border-b-[1px] lg:border-b-0 border-[#077105] hover:border-b lg:border-[#fff]  hover:text-red-600"><a href=".../index.html" class="">Home</a></li>
+            <li class="hover:tracking-wider w-[100%] lg:w-fit py-3 pl-4 lg:pl-0 border-b-[1px] lg:border-b-0 border-[#077105] hover:border-b lg:border-[#fff]   hover:text-red-600"><a href="./internships,html">Internships</a></li>
+            <li class="hover:tracking-wider w-[100%] lg:w-fit py-3 pl-4 lg:pl-0 border-b-[1px] lg:border-b-0 border-[#077105] hover:border-b lg:border-[#fff]   hover:text-red-600"><a href="./studyworkabroad.html">Study and work abroad</a></li>
+            <li class="hover:tracking-wider w-[100%] lg:w-fit py-3 pl-4 lg:pl-0 border-b-[1px] lg:border-b-0 border-[#077105] hover:border-b lg:border-[#fff]   hover:text-red-600"><a href="./learnenglish.html">Learn English</a></li>
+            <li class="hover:tracking-wider w-[100%] lg:w-fit py-3 pl-4 lg:pl-0 border-b-[1px] lg:border-b-0 border-[#077105] hover:border-b lg:border-[#fff]   hover:text-red-600"><a href="./admissions.html">Admissions</a></li>
+            <li class="hover:tracking-wider w-[100%] lg:w-fit py-3 pl-4 lg:pl-0 border-b-[1px] lg:border-b-0 border-[#077105] hover:border-b lg:border-[#fff]   hover:text-red-600"><a href="./fullyfunded.html">Fully Funded Employment Training Programme</a></li>
+        </ul>
+
+        <img src="./assets/bx-menu.png" alt="" onclick="runNav()" id="menuBar" class="w-[40px] lg:hidden">
+        <img src="./assets/x-regular-24.png" onclick="cancelNav()" id="xRegular" alt="" class="w-[40px] lg:hidden">
+    </header>
+    <main class="bg-[#f5f5f5]">
+        <div class="bg-[#003239] flex flex-col gap-8 px-[20px] lg:px-[70px] py-6">
+            <span class="text-[#ffffff] text-[12px]"><a href="" class="hover:underline">Achievers University</a> > CEC International Career Center</span>
+
+            <h1 class="text-[#ffffff] text-[27px] font-bold">CEC International Career Center</h1>
+        </div>
+
+    </main>
+
+    <footer class="flex flex-col gap-3 lg:items-center py-9 bg-[#077105] text-white">
+        <div class="px-9 lg:px-0">
+            <span class="capitalize text-[12px] lg:text-[20px]">for more information visit <a href="https://www.achievers.edu.ng" class="text-red-600">Achievers website</a> Or call</span> 
+        </div>
+        <div class="px-9 lg:px-0">
+            <span class="capitalize text-[12px] lg:text-[20px]">Adebayo: 08033432195; Alaba: 08037062508; Oluchi: 08039366046; Temidayo: 07030958994</span>
+        </div>
+    </footer>
+
+
+    <script src="./js/script.js" >
+        
+    </script>
+
+</body>
+</html>
