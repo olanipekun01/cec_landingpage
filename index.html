@@ -52,7 +52,35 @@
             display: flex;
         }
 
-        
+        .answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 1.4s ease;
+        }
+
+        .faq.active .answer {
+            max-height: 300px;
+            animation: fade 1s ease-in-out;
+        }
+
+        .faq.active svg {
+            transform: rotate(180deg);
+        }
+
+        svg {
+            transition: transform 0.5s ease-in;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
 
     </style>
 </head>
@@ -68,11 +96,11 @@
 
         
         <ul id="navBar" class="absolute hidden left-0 top-[95px] lg:top-[0px]  bg-white lg:bg-transparent p-0 w-[100%] lg:w-fit lg:relative decoration-none text-[#077105] lg:text-[#fff] lg:flex flex-col lg:flex-row items-center lg:gap-12 text-[11px]">
-            <li class="hover:tracking-wider w-[100%] lg:w-fit py-3 pl-4 lg:pl-0 border-b-[1px] lg:border-b-0 border-[#077105] hover:border-b lg:border-[#fff]  hover:text-red-600"><a href="./index.html" class="">Home</a></li>
+            <!-- <li class="hover:tracking-wider w-[100%] lg:w-fit py-3 pl-4 lg:pl-0 border-b-[1px] lg:border-b-0 border-[#077105] hover:border-b lg:border-[#fff]  hover:text-red-600"><a href="./index.html" class="">Home</a></li> -->
             <li class="hover:tracking-wider w-[100%] lg:w-fit py-3 pl-4 lg:pl-0 border-b-[1px] lg:border-b-0 border-[#077105] hover:border-b lg:border-[#fff]   hover:text-red-600"><a href="./pages/internships.html">Internships</a></li>
             <li class="hover:tracking-wider w-[100%] lg:w-fit py-3 pl-4 lg:pl-0 border-b-[1px] lg:border-b-0 border-[#077105] hover:border-b lg:border-[#fff]   hover:text-red-600"><a href="./pages/studyworkabroad.html">Study and work abroad</a></li>
             <li class="hover:tracking-wider w-[100%] lg:w-fit py-3 pl-4 lg:pl-0 border-b-[1px] lg:border-b-0 border-[#077105] hover:border-b lg:border-[#fff]   hover:text-red-600"><a href="./pages/learnenglish.html">Learn English</a></li>
-            <li class="hover:tracking-wider w-[100%] lg:w-fit py-3 pl-4 lg:pl-0 border-b-[1px] lg:border-b-0 border-[#077105] hover:border-b lg:border-[#fff]   hover:text-red-600"><a href="./pages/admmissions.html">Admissions</a></li>
+            <li class="hover:tracking-wider w-[100%] lg:w-fit py-3 pl-4 lg:pl-0 border-b-[1px] lg:border-b-0 border-[#077105] hover:border-b lg:border-[#fff]   hover:text-red-600"><a href="./pages/admissions.html">Admissions</a></li>
             <li class="hover:tracking-wider w-[100%] lg:w-fit py-3 pl-4 lg:pl-0 border-b-[1px] lg:border-b-0 border-[#077105] hover:border-b lg:border-[#fff]   hover:text-red-600"><a href="./pages/fullyfunded.html">Fully Funded Employment Training Programme</a></li>
         </ul>
 
@@ -106,7 +134,7 @@
 
         <section class="bg-[#077105] px-[70px] py-[40px]">
             <h2 class="text-[27px] font-bold text-white" id="exploreSection">Explore </h2>
-            <div class="flex flex-row flex-wrap gap-12 px-[20px] mt-[20px]">
+            <!-- <div class="flex flex-row flex-wrap gap-12 px-[20px] mt-[20px]">
                 <div class="bg-[#ffffff] rounded-lg w-[380px] h-[450px]">
                     <img src="./assets/10003.png" class="w-[100%] rounded-t-lg rounded-r-lg h-[187px]" alt="" />
                     <div class="bg-[#f7f7f7] px-[20px] rounded-b-lg rounded-l-lg py-[30px] h-[263px] flex flex-col justify-between">
@@ -170,7 +198,46 @@
                 
 
                 
+            </div> -->
+        
+            <div class="faq w-[700px] mt-[2rem] pb-[1rem] border-[2px] border-solid border-[#ffff]">
+                <div class="question ">
+                    <h3 class="">What is js</h3>
+                    <svg width="15" height="10" viewBox="0 0 42 25">
+                        <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+                    </svg>
+                </div>
+
+                <div class="answer">
+                    <p class="pt-[1rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis obcaecati tempore debitis assumenda voluptas accusamus dolorum ducimus dolor officiis, a totam. Et eos odio quia sed consectetur quasi ea necessitatibus!</p>
+                </div>
             </div>
+
+            <div class="faq w-[700px] mt-[2rem] pb-[1rem] border-[2px] border-solid border-[#ffff]">
+                <div class="question ">
+                    <h3 class="">What is js</h3>
+                    <i class=""></i>
+                </div>
+
+                <div class="answer">
+                    <p class="pt-[1rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis obcaecati tempore debitis assumenda voluptas accusamus dolorum ducimus dolor officiis, a totam. Et eos odio quia sed consectetur quasi ea necessitatibus!</p>
+                </div>
+            </div>
+
+            <div class="faq w-[700px] mt-[2rem] pb-[1rem] border-[2px] border-solid border-[#ffff]">
+                <div class="question ">
+                    <h3 class="">What is js</h3>
+                    <i class=""></i>
+                </div>
+
+                <div class="answer">
+                    <p class="pt-[1rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis obcaecati tempore debitis assumenda voluptas accusamus dolorum ducimus dolor officiis, a totam. Et eos odio quia sed consectetur quasi ea necessitatibus!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="">
+
         </section>
     </main>
 
