@@ -59,8 +59,9 @@
         }
 
         .faq.active .answer {
-            max-height: 300px;
+            max-height: 100%;
             animation: fade 1s ease-in-out;
+            overflow: visible
         }
 
         .faq.active svg {
@@ -97,7 +98,7 @@
         
         <ul id="navBar" class="absolute hidden left-0 top-[95px] lg:top-[0px]  bg-white lg:bg-transparent p-0 w-[100%] lg:w-fit lg:relative decoration-none text-[#077105] lg:text-[#fff] lg:flex flex-col lg:flex-row items-center lg:gap-12 text-[11px]">
             <!-- <li class="hover:tracking-wider w-[100%] lg:w-fit py-3 pl-4 lg:pl-0 border-b-[1px] lg:border-b-0 border-[#077105] hover:border-b lg:border-[#fff]  hover:text-red-600"><a href="./index.html" class="">Home</a></li> -->
-            <li class="hover:tracking-wider w-[100%] lg:w-fit py-3 pl-4 lg:pl-0 border-b-[1px] lg:border-b-0 border-[#077105] hover:border-b lg:border-[#fff]   hover:text-red-600"><a href="./pages/internships.html">Internships</a></li>
+            <li class="hover:tracking-wider w-[100%] lg:w-fit py-3 pl-4 lg:pl-0 border-b-[1px] lg:border-b-0 border-[#077105] hover:border-b lg:border-[#fff]   hover:text-red-600"><a href="./pages/internship.html">Internships</a></li>
             <li class="hover:tracking-wider w-[100%] lg:w-fit py-3 pl-4 lg:pl-0 border-b-[1px] lg:border-b-0 border-[#077105] hover:border-b lg:border-[#fff]   hover:text-red-600"><a href="./pages/studyworkabroad.html">Study and work abroad</a></li>
             <li class="hover:tracking-wider w-[100%] lg:w-fit py-3 pl-4 lg:pl-0 border-b-[1px] lg:border-b-0 border-[#077105] hover:border-b lg:border-[#fff]   hover:text-red-600"><a href="./pages/learnenglish.html">Learn English</a></li>
             <li class="hover:tracking-wider w-[100%] lg:w-fit py-3 pl-4 lg:pl-0 border-b-[1px] lg:border-b-0 border-[#077105] hover:border-b lg:border-[#fff]   hover:text-red-600"><a href="./pages/admissions.html">Admissions</a></li>
@@ -200,16 +201,37 @@
                 
             </div> -->
         
-            <div class="faq w-[700px] mt-[2rem] pb-[1rem] border-[2px] border-solid border-[#ffff]">
-                <div class="question ">
-                    <h3 class="">What is js</h3>
+            <div class="text-[#fff] faq w-[100%] mt-[2rem] pb-[1rem] border-b-[2px] border-solid border-[#ffff]">
+                <div class="question flex flex-row gap-7 items-center">
+                    <h3 class="text-[24px] ">Internships</h3>
                     <svg width="15" height="10" viewBox="0 0 42 25">
                         <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
                     </svg>
                 </div>
 
-                <div class="answer">
-                    <p class="pt-[1rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis obcaecati tempore debitis assumenda voluptas accusamus dolorum ducimus dolor officiis, a totam. Et eos odio quia sed consectetur quasi ea necessitatibus!</p>
+                <div class="answer mt-[20px] text-[17px]">
+                    <p class="">Embark on a transformative journey with our globally enriching internship programme. Gain hands-on experience, expand your professional network, and enhance your employability while immersing yourself in diverse cultures and work environments.</p>
+
+                    <div class="mt-[20px]">
+                        <h4 class="">Requirements</h4>
+                        <ul class="pl-[20px]">
+                            <li class="mt-2">Age limit:18 – 35 years</li>
+                            <li class="mt-2">Internship applicants must be current students who have completed 2 years of their programme or recent graduates with Bachelor degrees.</li>
+                            <li class="mt-2">Passing the Canadian Internship Tests is mandatory for internship consideration. The tests assess skills relevant to the internship opportunities.</li>
+                        </ul>
+                    </div>
+
+                    <div class="mt-[20px] mb-[30px]">
+                        <h4 class="">Procedure</h4>
+                        <ol type="1" class="pl-[20px]">
+                            <li class="mt-2">Fill out the registration form.</li>
+                            <li class="mt-2">Pay Canadian Internship Test fee $70 and take the test.</li>
+                            <li class="mt-2">Subscribe to the CEC job portal to work remotely as an intern. $100(optional)</li>
+                            <li class="mt-2">Get two months of unpaid internship and four months of paid internship<br/>Interns earn between $5-$35 per hour for Remote interns and $3000-$4000 for On-site interns.</li>
+                        </ol>
+                    </div>
+
+                    <a href="./pages/internship.html" class="mt-[20px] bg-[#eeeeee] text-[#077105] h-[180px] px-5 rounded-lg">Apply Now</a>
                 </div>
             </div>
 
