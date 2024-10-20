@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Validate inputs
     if (!empty($fName) && !empty($lName)  && !empty($email) && !empty($phone) && !empty($status) && filter_var($email, FILTER_VALIDATE_EMAIL)) {
         // Email details
-        $to = "cecforms@achievers.edu.ng, Learnenglishachievers@glocotrust.com";  // Replace with your own email
+        $to = "cecforms@achievers.edu.ng, studyandworkabroadachievers@glocotrust.com";  // Replace with your own email
         $subject = "New NCLEX Form Submission";
         
         // Set a fixed "From" email address (e.g., your domain's email)
