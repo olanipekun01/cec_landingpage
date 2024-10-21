@@ -38,9 +38,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
         // Send the email
         if (mail($to, $subject, $body, $headers)) {
-            echo "Message sent successfully!";
+            echo "Application submitted successfully!";
         } else {
-            echo "Message could not be sent. Please try again.";
+            echo "Application could not be submitted. Please try again.";
         }
     } else {
         echo "Invalid input. Please check your details and try again.";
