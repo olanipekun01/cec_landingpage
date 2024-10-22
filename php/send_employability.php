@@ -7,15 +7,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $phone = htmlspecialchars(trim($_POST['phone']));
     $industry = htmlspecialchars(trim($_POST['industry']));
 
-
+                                                                                                                                                                                                                                                            
     // Validate inputs
     if (!empty($fName) && !empty($lName)  && !empty($email) && !empty($phone) && !empty($industry) && filter_var($email, FILTER_VALIDATE_EMAIL)) {
         // Email details
-        $to = "auictdrive@gmail.com, employmentrainingachievers@gmail.com, studyandworkabroadachievers@glocotrust.com";  // Replace with your own email
+        $to = "auictdrive@gmail.com, employmenttrainingachievers@gmail.com, studyandworkabroadachievers@glocotrust.com";  // Replace with your own email
         $subject = "New International Employability Form Submission";
         
         // Set a fixed "From" email address (e.g., your domain's email)
-        $from = "auict-cec@achievers.edu.ng";  // Replace with your domain's email
+        $from = "auict-cec@achievers.edu.ng";  // Replace with your do                                                                                main's email
         
         $headers = "From: " . $from . "\r\n";
         $headers .= "Reply-To: " . $email . "\r\n";  // The user's email for replying
