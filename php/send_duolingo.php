@@ -10,11 +10,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Validate inputs
     if (!empty($name)  && !empty($email) && !empty($phone) && !empty($dateOfBirth) && filter_var($email, FILTER_VALIDATE_EMAIL)) {
         // Email details
-        $to = "cecforms@achievers.edu.ng, admissionsachievers@glocotrust.com";  // Replace with your own email
+        $to = "auictdrive@gmail.com, admissionsachievers@glocotrust.com";  // Replace with your own email
         $subject = "New Duolingo Form Submission";
         
         // Set a fixed "From" email address (e.g., your domain's email)
-        $from = "ict@achievers.edu.ng";  // Replace with your domain's email
+        $from = "auict-cec@achievers.edu.ng";  // Replace with your domain's email
         
         $headers = "From: " . $from . "\r\n";
         $headers .= "Reply-To: " . $email . "\r\n";  // The user's email for replying
