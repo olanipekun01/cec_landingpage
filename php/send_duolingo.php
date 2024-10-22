@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Validate inputs
     if (!empty($name)  && !empty($email) && !empty($phone) && !empty($dateOfBirth) && filter_var($email, FILTER_VALIDATE_EMAIL)) {
         // Email details
-        $to = "auictdrive@gmail.com, admissionsachievers@glocotrust.com";  // Replace with your own email
+        $to = "auictdrive@gmail.com, admissionsachieversuni@gmail.com, admissionsachievers@glocotrust.com";  // Replace with your own email
         $subject = "New Duolingo Form Submission";
         
         // Set a fixed "From" email address (e.g., your domain's email)

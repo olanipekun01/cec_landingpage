@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Validate inputs
     if (!empty($name)  && !empty($email) && !empty($phone) && !empty($age) && !empty($dateOfBirth) && !empty($nationality) && !empty($level) && !empty($package) && !empty($status) && filter_var($email, FILTER_VALIDATE_EMAIL)) {
         // Email details
-        $to = "auictdrive@gmail.com, learnenglishachievers@glocotrust.com";  // Replace with your own email
+        $to = "auictdrive@gmail.com, learnenglishachievers@gmail.com, learnenglishachievers@glocotrust.com";  // Replace with your own email
         $subject = "New ESL Form Submission";
         
         // Set a fixed "From" email address (e.g., your domain's email)
