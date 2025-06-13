@@ -6,10 +6,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = htmlspecialchars(trim($_POST['email']));
     $phone = htmlspecialchars(trim($_POST['phone']));
     $status = htmlspecialchars(trim($_POST['status']));
+    $dateOfBirth = htmlspecialchars(trim($_POST['dateOfBirth']));
+    $gender = htmlspecialchars(trim($_POST['gender']));
+    $courseOfStudy = htmlspecialchars(trim($_POST['courseOfStudy']));
+    $level = htmlspecialchars(trim($_POST['level']));
+    $nameOfInstitution = htmlspecialchars(trim($_POST['nameOfInstitution']));
 
 
     // Validate inputs
-    if (!empty($fName) && !empty($lName)  && !empty($email) && !empty($phone) && !empty($status) && filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    if (!empty($fName) && !empty($lName)  && !empty($email) && !empty($phone) && !empty($dateOfBirth) && !empty($gender) && !empty($courseOfStudy) && !empty($level) && !empty($nameOfInstitution) && !empty($status) && filter_var($email, FILTER_VALIDATE_EMAIL)) {
         // Email details
         $to = "auictdrive@gmail.com, studyandworkabroadachievers@gmail.com, studyandworkabroadachievers@glocotrust.com";  // Replace with your own email
         $subject = "New NCLEX Form Submission";
@@ -33,6 +38,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <p><strong>Last name:</strong> $lName</p>
                 <p><strong>Email:</strong> $email</p>
                 <p><strong>Phone:</strong> $phone</p>
+                <p><strong>Date of Birth:</strong> $dateOfBirth</p>
+                <p><strong>Gender:</strong> $gender</p>
+                <p><strong>Course of Study:</strong> $courseOfStudy</p>
+                <p><strong>Level:</strong> $level</p>
+                <p><strong>Name of Institution:</strong> $nameOfInstitution</p>
                 <p><strong>Professional Status:</strong><br>$status</p>
             </body>
             </html>

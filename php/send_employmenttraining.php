@@ -5,20 +5,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $lName = htmlspecialchars(trim($_POST['lName']));
     $email = htmlspecialchars(trim($_POST['email']));
     $phone = htmlspecialchars(trim($_POST['phone']));
-    $dateOfBirth = htmlspecialchars(trim($_POST['dateOfBirth']));
-    $gender = htmlspecialchars(trim($_POST['gender']));
-    $courseOfStudy = htmlspecialchars(trim($_POST['courseOfStudy']));
-    $level = htmlspecialchars(trim($_POST['level']));
-    $nameOfInstitution = htmlspecialchars(trim($_POST['nameOfInstitution']));
     $industry = htmlspecialchars(trim($_POST['industry']));
-    $testDate = htmlspecialchars(trim($_POST['test-date']));
 
 
     // Validate inputs
-    if (!empty($fName) && !empty($lName)  && !empty($email) && !empty($phone) && !empty($dateOfBirth) && !empty($gender) && !empty($courseOfStudy) && !empty($level) && !empty($nameOfInstitution) && !empty($industry) && !empty($testDate) && filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    if (!empty($fName) && !empty($lName)  && !empty($email) && !empty($phone) && !empty($industry) && filter_var($email, FILTER_VALIDATE_EMAIL)) {
         // Email details
-        $to = "auictdrive@gmail.com, internshipachievers@gmail.com, internshipachievers@glocotrust.com";  // Replace with your own email
-        $subject = "New Internship Form Submission";
+        $to = "auictdrive@gmail.com, employmenttrainingachievers@gmail.com, employmenttrainingachievers@glocotrust.com";  // Replace with your own email
+        $subject = "New Employment Training Form Submission";
         
         // Set a fixed "From" email address (e.g., your domain's email)
         $from = "auict-cec@achievers.edu.ng";  // Replace with your domain's email
@@ -39,13 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <p><strong>Last name:</strong> $lName</p>
                 <p><strong>Email:</strong> $email</p>
                 <p><strong>Phone:</strong> $phone</p>
-                <p><strong>Date of Birth:</strong> $dateOfBirth</p>
-                <p><strong>Gender:</strong> $gender</p>
-                <p><strong>Course of Study:</strong> $courseOfStudy</p>
-                <p><strong>Level:</strong> $level</p>
-                <p><strong>Name of Institution:</strong> $nameOfInstitution</p>
                 <p><strong>Industry:</strong><br>$industry</p>
-                <p><strong>Test Date:</strong><br>$testDate</p>
             </body>
             </html>
         ";

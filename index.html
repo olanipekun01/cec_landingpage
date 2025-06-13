@@ -72,6 +72,155 @@
             transition: transform 0.5s ease-in;
         }
 
+        .popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
+        }
+
+        .popup-content {
+            position: relative;
+            width: 600px;
+            height: 650px;
+            background: #fff;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 22%);
+        }
+
+        .popup-content .img-box {
+            position: relative;
+            width: 600px;
+            height: 550px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        
+
+        .popup-content .img-box img {
+            position: relative;
+            width: 600px;
+            height: 550px;
+            z-index: 1;
+        }
+
+        .popup-content .content {
+            position: relative;
+            width: 500px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 40px;
+        }
+
+        .content h3 {
+            color: #333;
+            line-height: 1em;
+            font-weight: 400;
+            font-size: 2em;
+        }
+
+        .content h2 {
+            line-height: 1.1em;
+            color: #ff4d54;
+            font-size: 4em;
+        }
+
+        .content h2 sup {
+            font-size: .75em;
+            color: #333;
+            text-transform: uppercase;
+        }
+
+        .content p {
+            font-weight: 300;
+            padding-right: 10px;
+        }
+
+        .content a {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #162f6f;
+            color: #fff;
+            margin-top: 15px;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: .4s;
+        }
+
+        .content a:hover {
+            background: #C52946;
+            color: #d9f4ea;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            width: 40px;
+            height: 40px;
+            background: #fff url(./x-regular-white-84.png);
+            background-repeat: no-repeat;
+            background-size: 40px;
+            background-position: center;
+            border-radius: 50%;
+            z-index: 10;
+        }
+
+        @media (max-width: 768px) {
+            
+
+            .popup-content {
+                flex-direction: column;
+                height: auto;
+                width: 300px;
+            }
+
+            
+
+            .popup-content .img-box {
+                width: 300px;
+                height: 400px;
+                transform: translateY(-50px);
+            }
+
+            
+
+            .popup-content .img-box img {
+                position: relative;
+                width: 300px;
+                height: 400px;
+                z-index: 1;
+            }
+
+            
+
+            .popup-content .content {
+                width: 300px;
+                height: auto;
+                text-align: center;
+                padding: 20px;
+                padding-top: 0;
+            }
+
+            .close-btn {
+                top: -70px;
+                right: -15px;
+                background-repeat: no-repeat;
+                background-size: 10px;
+                background-position: center;
+                background: #fff url(./x-regular-white-36.png);
+            }
+
+            
+        }
+
         @keyframes fade {
             from {
                 opacity: 0;
@@ -103,6 +252,7 @@
             <li class="hover:tracking-wider w-[100%] lg:w-fit py-3 pl-4 lg:pl-0 border-b-[1px] lg:border-b-0 border-[#077105] hover:border-b lg:border-[#fff]   hover:text-red-600"><a href="#learnEnglish">Learn English</a></li>
             <li class="hover:tracking-wider w-[100%] lg:w-fit py-3 pl-4 lg:pl-0 border-b-[1px] lg:border-b-0 border-[#077105] hover:border-b lg:border-[#fff]   hover:text-red-600"><a href="#admissions">Admissions</a></li>
             <li class="hover:tracking-wider w-[100%] lg:w-fit py-3 pl-4 lg:pl-0 border-b-[1px] lg:border-b-0 border-[#077105] hover:border-b lg:border-[#fff]   hover:text-red-600"><a href="#fullyFundedEmployment">Fully Funded Employment Training Programme</a></li>
+            <li class="hover:tracking-wider w-[100%] lg:w-fit py-3 pl-4 lg:pl-0 border-b-[1px] lg:border-b-0 border-[#077105] hover:border-b lg:border-[#fff]   hover:text-red-600"><a href="./pages/languagecourse.html">Language Course</a></li>
         </ul>
 
         <img src="./assets/bx-menu.png" alt="" onclick="runNav()" id="menuBar" class="w-[40px] lg:hidden">
@@ -132,6 +282,80 @@
                 <img class="w-[80px] lg:w-[180px]" alt="" src="./assets/bbc8af25-a723-4d80-b0fb-a17de7e80e2b.jpeg" />
             </div>
         </section>
+
+        <section class="relative bg-gray-50 overflow-hidden">
+                <div class="max-w-7xl mx-auto py-16">
+                    <div class="bg-white shadow-xl rounded-lg overflow-hidden">
+                        <!-- Header Section -->
+                        <div class="flex justify-between items-start p-6 bg-gradient-to-r from-gray-100 to-gray-200">
+                            <div class="flex items-center">
+                                <div class="relative h-16 w-40">
+                                    <div class="flex flex-col">
+                                        <div class="flex items-center text-3xl font-bold">
+                                            <span class="text-red-600">C</span>
+                                            <span class="text-orange-500">E</span>
+                                            <span class="text-orange-400">C</span>
+                                            <img src="./assets/mapleleaf-bg.png" alt="Maple Leaf" class="ml-1 w-5 h-5">
+                                        </div>
+                                        <span class="text-gray-800 text-xs">Canadian Education Council</span>
+                                        <span class="text-gray-600 text-[10px]">BRIGHTER TOMORROW STARTS TODAY</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="relative h-16 w-16">
+                                <img src="./achieverslogo.png" alt="University Logo" class="rounded-full w-full h-full">
+                            </div>
+                        </div>
+                        
+                        <!-- Main Content -->
+                        <div class="md:flex">
+                            <div class="p-6 md:w-1/2 space-y-4">
+                                <div>
+                                    <div class="bg-red-600 text-white text-4xl font-bold px-6 py-2 rounded-t-lg">Learn</div>
+                                    <div class="bg-red-600 text-white text-6xl font-extrabold px-6 py-1">GERMAN</div>
+                                    <div class="bg-gray-400 text-white text-4xl font-bold px-6 py-2">LANGUAGE</div>
+                                </div>
+                                <div class="bg-gray-800 text-white px-6 py-3 inline-block font-medium">
+                                    NOW OPEN FOR REGISTRATION
+                                </div>
+                                <div class="text-red-600 text-2xl font-bold">A1-A2-B1-B2-C1</div>
+                                <p class="text-gray-700">
+                                    Ever dreamed of speaking German for travel, business, or personal growth? Now's your chance!
+                                    Register for our German language course and start your language learning journey today.
+                                </p>
+                                <a href="./pages/languagecourse.html" class="bg-red-600 hover:bg-red-700 text-white px-8 py-2 rounded-lg">Register Now</a>
+                                
+                                <!-- Contact Info -->
+                                <div class="space-y-3 mt-4">
+                                    <div class="flex items-center">
+                                        <div class="bg-red-600 rounded-full p-2 mr-2">
+                                            <img src="./assets/phone-regular-24.png" alt="Phone" class="w-5 h-5 text-white">
+                                        </div>
+                                        <span class="text-gray-800">07035143299</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <div class="bg-red-600 rounded-full p-2 mr-2">
+                                            <img src="./assets/globe-regular-24.png" alt="Globe" class="w-5 h-5 text-white">
+                                        </div>
+                                        <span class="text-gray-800">https://cec-icc.achievers.edu.ng</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <div class="bg-red-600 rounded-full p-2 mr-2">
+                                            <img src="./assets/envelope-regular-24.png" alt="Mail" class="w-5 h-5 text-white">
+                                        </div>
+                                        <span class="text-gray-800">nigeria@canadianeducationcouncil.org</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Image Section -->
+                            <div class="md:w-1/2 relative">
+                                <img src="./assets/Poses-bg.png" alt="Student with books" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
         <section class="bg-[#077105] px-[30px] lg:px-[70px] py-[40px]">
             <h2 class="text-[27px] font-bold text-white" id="exploreSection">Explore </h2>
@@ -200,6 +424,7 @@
 
                 
             </div> -->
+            
         
             <div class="text-[#fff] faq w-[100%] mt-[2rem] pb-[40px] border-b-[2px] border-solid border-[#ffff]">
                 <div id="internships" class="question flex flex-row gap-7 items-center">
@@ -266,14 +491,14 @@
 
                     <a href="./pages/nclex.html" class="mt-[20px]  bg-[#eeeeee] text-[#077105] py-5 px-5 rounded-lg hover:text-[#ffffff] hover:border-[#fffff] hover:bg-[#077105] hover:border-[1px] border-solid">Apply Now</a>
                     
-                    <p class="mt-[40px]"><span class="font-bold ">International Employability Test:</span> This is an international examination for employers who seek experienced professionals to work internationally anywhere in the world. These exams will give a full breakdown of the candidates strengths and weakness based on their test results.</p>
+                    <p class="mt-[40px]"><span class="font-bold ">International Employability Test:</span> This is an international examination for employers who seek experienced professionals to work internationally from anywhere in the world. These exams will give a full breakdown of the candidates strengths and weaknesses based on their test results.</p>
                     
                     <div class="mt-[20px] mb-[30px]">
                         <h4 class="">Requirements:</h4>
                         <ol type="1" class="pl-[20px]">
-                            <li class="mt-2">Age limit:18 – 45 years.</li>
-                            <li class="mt-2">Applicants must have completed their degrees and have 1-2 years experience.</li>
-                            <li class="mt-2">Passing the International Employability Test which is mandatory for working with organizations abroad on our platform</li>
+                            <li class="mt-2">Age limit: 18 years and above.</li>
+                            <li class="mt-2">No experience required.</li>
+                            <li class="mt-2">⁠Passing the International Employability Test is mandatory for working with organizations abroad on our platform.</li>
                            
                         </ol>
                     </div>
@@ -281,12 +506,11 @@
                     <div class="mt-[20px] mb-[30px]">
                         <h4 class="">Procedure</h4>
                         <ol type="1" class="pl-[20px]">
-                            <li class="mt-2">Pay registration fee and fill out Form</li>
-                            <li class="mt-2">Pay International Employability Tests fee</li>
-                            <li class="mt-2">Passing the International Employability Tests is mandatory for consideration</li>
-                            <li class="mt-2">1 months of unpaid internship, after one month, Employees will receive monthly payments</li>
-                            <li class="mt-2">Registration fee: $1,200</li>
-                            <li class="mt-2">Write Canadian Internship Test: $70</li>
+                            <li class="mt-2">Register and fill out form.</li>
+                            <li class="mt-2">Pay International Employability Test fee.</li>
+                            <li class="mt-2">⁠Passing the International Employability Test is mandatory for consideration.</li>
+                            <li class="mt-2">One month of unpaid internship and after one month, employees will receive monthly payments.</li>
+                            <li class="mt-2">⁠International Employability Test fee: $90</li>
                         </ol>
                     </div>   
 
@@ -428,7 +652,7 @@
                             </ol>
                         </div>
 
-                        <a href="./pages/duolingo.html" class="  bg-[#eeeeee] text-[#077105] py-5 px-5 rounded-lg hover:text-[#ffffff] hover:border-[#fffff] hover:bg-[#077105] hover:border-[1px] border-solid">Register Now</a>
+                        <a href="./pages/prepare_duolingo.html" class="  bg-[#eeeeee] text-[#077105] py-5 px-5 rounded-lg hover:text-[#ffffff] hover:border-[#fffff] hover:bg-[#077105] hover:border-[1px] border-solid">Register Now</a>
                         
                     </div>
                 </div>
@@ -468,7 +692,7 @@
                         </ol>
                     </div>
 
-                    <a href="./pages/internship.html" class="  bg-[#eeeeee] text-[#077105] py-5 px-5 rounded-lg hover:text-[#ffffff] hover:border-[#fffff] hover:bg-[#077105] hover:border-[1px] border-solid">Apply Now</a>
+                    <a href="./pages/employmenttraining.html" class="  bg-[#eeeeee] text-[#077105] py-5 px-5 rounded-lg hover:text-[#ffffff] hover:border-[#fffff] hover:bg-[#077105] hover:border-[1px] border-solid">Apply Now</a>
             </div>
             </div>
         </section>
@@ -485,11 +709,44 @@
         <div class="px-9 lg:px-0">
             <span class="capitalize text-[12px] lg:text-[20px]">Adebayo: 08033432195; Alaba: 08037062508; Oluchi: 08039366046; Temidayo: 07030958994</span>
         </div>
-    </footer>
+    </footer>           
+
+    <div class="popup">
+        
+        <section class="popup-content">
+            <div class="close-btn"></div>
+            <div class="img-box">
+                <img src="./assets/expoflyer.jpg" alt="expo" />
+            </div>
+            <div class="content">
+                <div>
+                    <!-- <h2>Fill Expo<sup>2025</sup> Form </h2> -->
+                    
+                    <a href="./pages/studyexpo.html"> Join Us Now </a>
+                </div>
+            </div>
+        </section>
+    </div>
 
 
     <script src="./js/script.js" >
         
+    </script>
+
+    <script>
+        // Automatic show popup after 2 seconds of page load
+        const popup = document.querySelector('.popup');
+        const close = document.querySelector('.close-btn');
+
+        window.onload = function () {
+            setTimeout(function(){
+                popup.style.display = 'block';
+            }, 1000)
+        }
+
+        close.addEventListener('click', () => {
+            popup.style.display =  'none';
+        })
     </script>
 
 </body>
